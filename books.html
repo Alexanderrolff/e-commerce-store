@@ -59,15 +59,15 @@
               <h2 class="section__title books__header--title">
                 Alla <span class="purple">Böcker</span>
               </h2>
-              <select id="filter">
+              <select id="filter" onchange="filterBooks(event)">
                 <option value="" disabled selected>Filtrera</option>
                 <option value="LOW_TO_HIGH">Pris, lägst till högst</option>
                 <option value="HIGH_TO_LOW">Pris, högst till lägst</option>
                 <option value="RATING">Betyg</option>
               </select>
             </div>
-            <div class="books">
-              
+            <div class="books books__loading">
+              <i class="fas fa-spinner books__loading--spinner"></i>
             </div>
           </div>
         </div>
